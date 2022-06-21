@@ -278,7 +278,7 @@ function AsteroidLibrary.Build()
 				HomeFrame.Visible = true
 			end
 			for i,v in next, TabsHolder:GetChildren() do
-				if v:IsA('Frame') then
+				if v:IsA('TextButton') then
 					tweenSrv:Create(
 						v,
 						TweenInfo.new(0.35, Enum.EasingStyle.Linear, Enum.EasingDirection.Out),
