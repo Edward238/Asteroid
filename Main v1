@@ -271,7 +271,7 @@ function AsteroidLibrary.Build()
 		TabName.TextXAlignment = Enum.TextXAlignment.Left
 
 		HomeTab.MouseButton1Down:Connect(function()
-			for i,v in next, ContainersHolder:GetChildren()) do
+			for i,v in next, ContainersHolder:GetChildren() do
 				if v:IsA('Frame') then
 					v.Visible = false
 				end
